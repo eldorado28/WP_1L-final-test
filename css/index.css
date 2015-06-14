@@ -1,0 +1,107 @@
+.container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ================================ *
+ * Augsejais menu + logo
+ * ================================ */
+ 
+ .top {
+	background-color: #473a2d;
+ }
+ 
+ .izvelne {
+	padding-right: 95px;
+	padding-top: 10px;
+ }
+ 
+ .izvelne ul {
+	list-style-type: none;
+	display: inline-block;
+	padding: 14px;
+ }
+ 
+ .izvelne ul:hover {
+	background-color: #5b4d3b;
+ }
+ 
+ .izvelne ul:last-child {
+	border-right: 1px solid #fff;
+	padding-right: 35px;
+ }
+ .lang-menu {
+	width: 80px;
+	padding-left: 505px;
+	margin-top: -71px;
+ }
+ 
+  .lang-menu ul:hover {
+	background-color: #5b4d3b;
+ }
+ 
+ .lang-menu ul {
+	list-style-type: none;
+	display: inline-block;
+	padding: 7px;
+ }
+ 
+ .menu {
+	float: right;
+	color: #fff;
+}
+
+/* ================================ *
+ * slider
+ * ================================ */
+ 
+ .slider {
+	height: 595px;
+ }
+ 
+ /* ================================ *
+ * Pakalpojumi
+ * ================================ */
+ 
+.container h2 {
+	color: #a48d55;
+	text-align: center;
+	border-bottom: 2px dotted #736357;
+	padding-bottom: 25px;
+ }
+ 
+.row {
+	padding-left: 10px;
+  }
+  
+.col-1-3 {
+	width: 33%;
+	text-align: left;
+}
+
+.col-2-3 {
+	width: 33%;
+	float: right;
+	margin-top: -58px;
+	text-align: left;
+}
+
+.col-3-3 {
+	width: 33%;
+	float: right;
+	margin-top: -60px;
+	text-align: left;
+}
+
+.col-1-3 ul {
+	list-style-type: none;
+}
+
+.col-2-3 ul {
+	list-style-type: none;
+}
+
+.col-3-3 ul {
+	list-style-type: none;
+}
