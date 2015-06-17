@@ -16,14 +16,14 @@
 				<img src="pic/logo.jpg">
 				<div class="menu">
 					<nav class="izvelne">
-							<a href="#">Sakums</a>
-							<a href="#">Pakalpojumi</a>
-							<a href="#">Par mums</a>
-							<a href="#">Klienti</a>
-							<a href="#">Kontakti</a>
+							<a href="Sakums">Sakums</a>
+							<a href="#pakalpojumi">Pakalpojumi</a>
+							<a href="#parmums">Par mums</a>
+							<a href="#klienti">Klienti</a>
+							<a href="#kontakti">Kontakti</a>
 				    </nav>
 				    
-					<nav class="lang-menu">
+					<nav class="izvelne">
 							<a href="#">RU</a>
 							<a href="#">EN</a>
 					</nav>
@@ -39,7 +39,7 @@
 	</div>
 </div>
 
-<div class="pakalpojumi">
+<div class="pakalpojumi" id="pakalpojumi">
 	<div class="container">
 		<h2>Pakalpojumi</h2>
 			<div class="row">
@@ -76,7 +76,7 @@
 	</div>
 </div>
 
-<div class="par-mums">
+<div class="par-mums" id="parmums">
 	<div class="container">
 			<h2>Par mums</h2>
 		
@@ -98,8 +98,8 @@
 					<div class="cilveks-1">
 					    <div class="name-info">
 					        <h3>Edgars Udris</h3>
-					        <p class="phone">tel. +371 29114401</p>
-					        <p class="email">edgars@ventspilsmernieks.lv</p>
+					        <a href="#"><p class="phone">tel. +371 29114401</p></a>
+					        <a href="#"><p class="email">edgars@ventspilsmernieks.lv</p></a>
 					    </div>
 					    <div class="specialists">
 						    <p>Speciālists veiks uzdevumus, kas saistīti ar nekustamā īpašuma objektu kadastrālo uzmērīšanu un topogrāfisko izpēti būvniecības un teritorijas plānošanas vajadzībām, datu reģistrāciju un aktualizāciju Nekustamā īpašuma valsts kadastra reģistrā (turpmāk tekstā – NĪVKR).
@@ -113,8 +113,8 @@
 					<div class="cilveks-2">
 					    <div class="name-info">
 					        <h3>Tomass Soopargs</h3>
-					        <p class="phone">tel. +371 29235562</p>
-					        <p class="email">tomass@ventspilsmernieks.lv</p>
+					        <a href="#"><p class="phone">tel. +371 29235562</p></a>
+					        <a href="#"><p class="email">tomass@ventspilsmernieks.lv</p></a>
 					    </div>
 					    <div class="specialists">
 						    <p>Speciālists veiks uzdevumus, kas saistīti ar nekustamā īpašuma objektu kadastrālo uzmērīšanu un topogrāfisko izpēti būvniecības un teritorijas plānošanas vajadzībām, datu reģistrāciju un aktualizāciju Nekustamā īpašuma valsts kadastra reģistrā (turpmāk tekstā – NĪVKR).
@@ -128,14 +128,37 @@
 	</div>
 </div>
 
-<div class="klienti">
+<div class="klienti" id="klienti">
     <div class="container">
         <h2>Klienti</h2>
-        
+            <div class="klient-list">
+                <ul>
+                    <li>Latvijas</li>
+                    <li>LAtvijas valsts mezi</li>
+                    <li>Gibson</li>
+                    <li>Firma 4</li>
+                    <li>Firma 5</li>
+                <ul>
+                <ul>
+                    <li>Statoil</li>
+                    <li>Firma 2</li>
+                    <li>Firma 3</li>
+                    <li>Firma 4</li>
+                    <li>Latvenergo</li>
+                <ul>
+                <ul>
+                    <li>Firma 1</li>
+                    <li>LMT</li>
+                    <li>Firma 3</li>
+                    <li>Firma 4</li>
+                    <li>Firma 5</li>
+                    <li>Firma 6</li>
+                <ul>
+            </div>
     </div>
 </div>
 
-<div class="kontakti">
+<div class="kontakti" id="kontakti">
     <div class="container">
         <h2>Kontakti</h2>
         <div class="row">
@@ -147,15 +170,26 @@
                 <div class="contact-info">
                       <img src="">
                       <p>SIA "VENTSPILS MĒRNIEKS”</p>
-                      <p>tālrunis: + 371 29235562, 29114401</p>
-                      <p>e-pasts: birojs@ventspilsmernieks.lv</p>
+                      <a href="#"><p>tālrunis: + 371 29235562, 29114401</p></a>
+                      <a href="#"><p>e-pasts: birojs@ventspilsmernieks.lv</p></a>
                       <p>Vasarnīcu iela 9</p>
                       <p>Ventspils, LV-3601</p>
                   </div>
             </div>
             
             <div class="col-1-3">
-                te bus reg. forma
+                <div class="log-in">
+                    <p>te ir kkads texts</p>
+                    <form>
+                        <input clas="login" type="text" name="login" placeholder="login">
+                        <input type="text" name="password" placeholder="password">
+                    </form>
+                    <textarea rows="6" cols="50">
+                    </textarea>
+                    <div class="login-button">
+                    <button type="login">Login</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
