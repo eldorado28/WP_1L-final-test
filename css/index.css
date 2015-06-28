@@ -2,6 +2,18 @@ body {
     font-family: Open Sans;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: table;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
 .container {
 	width: 1200px;
 	margin-left: auto;
@@ -49,48 +61,73 @@ body {
  * ================================ */
  
  .slider {
-	height: 595px;
+	height: 565px;
  }
  
+ .slider img {
+	margin-top: -67px;
+	padding-top: 67px;
+ }
  /* ================================ *
  * Pakalpojumi
  * ================================ */
- 
+ .pakalpojumi {
+	background-color: #f8f4eb;
+	padding-bottom: 60px;
+ }
 .container h2 {
-	color: #a48d55;
+	color: #a6874b;
 	text-align: center;
-	border-bottom: 2px dotted #736357;
+	border-bottom: 2px dotted #a6874b;
 	padding-bottom: 15px;
 	padding-top: 20px;
  }
  
-.row {
-	padding-left: 10px;
-  }
-  
-.col-1-3 {
-    width:33.333%;
-    float:left;
-	padding-left: 30px;
- 	padding-right: 30px;
- 	box-sizing: border-box;
+ .col-1-3 {
+       width:33.333%;
+       float:left;
+ 	  padding-left: 30px;
+ 	  padding-right: 30px;
+ 	  box-sizing: border-box;
  }
-
-.col-1-3 ul {
-	list-style-type: none;
-}
-
-.col-1-3 h3 {
-    padding-left: 40px;
-}
-
+ .col-1-3:first-child {
+ 	padding-left: 0;
+ }
+ .col-1-3:last-child {
+ 	padding-right: 0;
+ }
+ .col-2-3 {
+       width:66.666%;
+       float:left;
+ }
+ .row:after {
+       display:table;
+       content:"  ";
+       clear:both;
+ }
+ 
+.article-image {
+   float:left;
+   margin-right: 20px;
+ }
+ 
+ .article-text {
+   color:#534c38;
+   font-size:16px;
+   overflow:hidden;
+ }
 
 /* ================================ *
  * Par mums
  * ================================ */
  
  .par-mums{
-     background-color: #473a2d;
+     background-color: #6f583a;
+	 margin-top: -20px;
+ }
+ 
+ .about-text {
+	color: #fff;
  }
  
  .heading h3{
@@ -99,6 +136,9 @@ body {
 	border-bottom: 2px solid red;
 }
 
+.portrets {
+	padding-left: 170px;
+}
 .texts p {
     text-align: left;
 }
@@ -113,19 +153,12 @@ body {
 .col-1-2 {
 	width: 50%;
 	float: left;
-}
-
-.clearfix:after {
-	visibility: hidden;
-	display: table;
-	content: " ";
-	clear: both;
-	height: 0;
+	padding: 30px;
 }
 
 .name-info h3{
     text-align: center;
-    color: #a48d55;
+    color: #a6874b;
 }
 
 .name-info a{
@@ -136,42 +169,76 @@ body {
     text-align: center;
     color: #a48d55;
     line-height: 3px;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .email {
     text-align: center;
     color: #a48d55;
     line-height: 3px;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .specialists p {
     text-align: left;
     padding-right: 40px;
+	color: #fff;
 }
 
+.certificate {
+  list-style-type: none;
+  background-color:#624e36;
+  color:#fff;
+  padding: 10px;
+  padding: 1em;
+}
+
+.certificate li {
+  width: 50%;
+  float: left;
+}
+
+.certificate li::before {
+  display:block;
+  content: url('../pic/diploms.jpg');
+  float:left;
+  padding-right:10px;
+}
+
+.cilveks-2 {
+	margin-top: -5px;
+}
 
 /* ================================ *
  * Klienti
  * ================================ */
- 
- 
- .klient-list ul{
-    list-style-type: none;
+ .klienti {
+	background-color: #f9f6ee;
+	margin-top: -20px;
  }
-
-.klient-list li{
-    display: inline-block;
-    padding-right: 100px;
-    padding-top: 80px;
+ 
+ .klienti a {
+	padding-right: 53px;
+ }
+ 
+ .klienti a:last-child{
+	padding-right: 0;
+ }
+ 
+ .arrow-style {
+	padding-left: 10px;
+	margin-right: -40px;
+	margin-top: -99px;
+	float: right;
+	background-color: #dad2c0;
 }
 /* ================================ *
  * Kontakti
  * ================================ */
  
  .kontakti{
-     background-color: #473a2d;
+     background-color: #645038;
+	 margin-top: -20px;
  }
  
  .contact-info{
@@ -185,14 +252,44 @@ body {
      color: #a48d55;
  }
  
- .log-in textarea {
-     margin-top: 20px;
- }
+ .contact-info p{
+  text-align: center;
+  color:#c7a457;
+  font-size: 16px;
+}
+
+ .contact-info img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
  
- 
-.login-button button {
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #fff;
-    background-color: #a48d55;
+.form-style {
+  float:left;
+  width: 196px;
+  background-color:#7f6c42;
+  color:#a38a55;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.msg-style {
+  width:405px;
+  min-height: 149px;
+  background-color:#7f6c42;
+  border: none;
+}
+.btn-style {
+  width:110px;
+  height: 41px;
+  background-color:#b1965c;
+  border: none;
+}
+
+#map-canvas {
+width:400px;
+height:300px;
+border: 6px solid #97804e;
 }
