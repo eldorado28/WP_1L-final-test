@@ -217,20 +217,14 @@ body {
 	margin-top: -20px;
  }
  
- .klienti a {
-	padding-right: 53px;
- }
- 
- .klienti a:last-child{
-	padding-right: 0;
- }
- 
- .arrow-style {
-	padding-left: 10px;
-	margin-right: -40px;
-	margin-top: -99px;
-	float: right;
-	background-color: #dad2c0;
+.logo-container li{
+    padding-right: 45px;
+    padding-bottom: 77px;
+	display: inline-block;
+}
+
+.logo-container li:last-child{
+	padding-left: 0px;
 }
 /* ================================ *
  * Kontakti
@@ -288,8 +282,6 @@ body {
   border: none;
 }
 
-#map-canvas {
-width:400px;
-height:300px;
-border: 6px solid #97804e;
+.map {
+	padding-top: 20px;
 }
